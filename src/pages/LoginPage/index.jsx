@@ -9,9 +9,9 @@ export function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    console.log("submit", { email, password });
+    console.log({ email, password });
   }
 
   return (
@@ -26,6 +26,7 @@ export function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
+
             <FaUser size={17} />
           </div>
           <div className="input-box">
@@ -35,6 +36,7 @@ export function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+
             <RiLockPasswordFill size={17} />
           </div>
           <div className="remember">

@@ -53,11 +53,15 @@
   transform: translate(-50%);
 }
 
+.input-box span {
+  color: rgb(255, 0, 0);
+}
+
 .content .remember {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  margin: -15px 0 15px;
+  margin: -2px 0 15px;
 }
 
 .remember label input {
