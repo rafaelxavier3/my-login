@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
@@ -5,17 +6,35 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import "./loginpage.css";
 
 export function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("submit", { email, password });
+  }
+
   return (
     <div className="container">
       <div className="content">
-        <form>
-          <h1>Login</h1>
+        <form onSubmit={handleSubmit}>
+          <h1>Entrar</h1>
           <div className="input-box">
-            <input type="text" placeholder="nome" />
+            <input
+              type="text"
+              placeholder="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
             <FaUser size={17} />
           </div>
           <div className="input-box">
-            <input type="password" placeholder="senha" />
+            <input
+              type="password"
+              placeholder="senha"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
             <RiLockPasswordFill size={17} />
           </div>
           <div className="remember">
