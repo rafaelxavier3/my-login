@@ -1,8 +1,19 @@
-# React + Vite
+## My login
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta página foi desenvolvida sem a utilização de qualquer banco de dados, sendo criada exclusivamente para aprimorar minhas habilidades em React. Durante o processo de desenvolvimento, optei por utilizar a biblioteca Yup para realizar validações, garantindo assim mais segurança. Este projeto representa não apenas um exercício técnico, mas também o comprometimento em buscar constantemente aprimorar minhas competências no desenvolvimento web.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- HTML5
+- CSS
+- Yup
+
+<p align="center">
+  <img src="/Readme/login.png"/>
+</p>
+
+<p align="center">
+  <img src="/Readme/register.png"/>
+</p>
+
